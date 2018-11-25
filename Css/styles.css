@@ -1,0 +1,52 @@
+.container{
+    display:inline-block;
+    height:200px;
+    width:200px;
+    border:20px solid black;
+}
+.box{
+    height:100%;
+    background:#aaa;
+    transform-origin:bottom right;
+    transition:transform 0.5s; 
+    pointer-events:none; /*when I leave the container it will stop rotating*/
+}
+
+.container:hover .box{
+    transform:rotate(60deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Transition Property: 
+.element{
+    transition: <property><duration><timing-function><delay>;
+}
+EXAMPLE:
+.element{
+    transition:width 400ms ease-in-out 2s;
+}
